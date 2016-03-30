@@ -25,7 +25,7 @@ end
 
 def titleize(string)
 	little_words = ["a", "an", "the", "at", "by", "for", "in", "of", "on","over", "to", "up", "and", "as", "but", "it", "or", "and", "nor"]
-	title = string.spllsit.map {|w| little_words.include?(w)? w: w.capitalize!}
+	title = string.split.map {|w| little_words.include?(w)? w: w.capitalize!}
 	title[0] = title[0].capitalize
 	title.join(" ")
 end
